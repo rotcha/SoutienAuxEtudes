@@ -1,26 +1,84 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dive Log (Angular/TypeScript)</title>
+  <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" 
+    rel="stylesheet" />
+  <script src="/node_modules/core-js/client/shim.min.js"></script>
+  <script src="/node_modules/zone.js/dist/zone.js"></script>
+  <script src="/node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="/node_modules/systemjs/dist/system.src.js"></script>
+
+  <script src="systemjs.config.js"></script>
+  <script>
+    System.import('app').catch(function(err){ console.error(err); });
+  </script>
+</head>
+<body>
+  <poly-info>Loading...</poly-info>
+</body>
+</html>-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Soutien à la formation en génie</title>
-    <link rel="stylesheet" href="style/styleMain.css" />
-</head>
-<body>
-<header>
-    <div>
-        <img src="img/logo.png"/>
-    </div>
-    <h1></h1>
-    <nav>
-        <ul>
-            <li> <a href="index.html" class="active">Accueil</a></li>
-            <li> <a href="#l" >Questionnaires</a></li>
-            <li><a href="#">Tutorat en ligne</a></li>
-            <li><a href="#">Environnement collaboratif</a></li>
-            </hr>
-        </ul>
-    </nav>
+  <meta charset="UTF-8">
+  <title>Soutien à la formation en génie</title>
+  <link href="https://fonts.googleapis.com/css?family=Lemonada|Overlock+SC" rel="stylesheet">
+  <link rel="stylesheet" href="public/css/main.css" />
+  <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+        rel="stylesheet" />
+  <script src="/node_modules/core-js/client/shim.min.js"></script>
+  <script src="/node_modules/zone.js/dist/zone.js"></script>
+  <script src="/node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="/node_modules/systemjs/dist/system.src.js"></script>
 
-</header>
+  <script src="systemjs.config.js"></script>
+  <script>
+    /*      System.config({
+     transpiler: 'typescript',
+     typescriptOptions: { emitDecoratorMetadata: true },
+     packages: {'app': {defaultExtension: 'ts'}},
+     map: { 'app': './app' }
+     });*/
+    System.import('app')
+        .catch(function (err) {
+            console.error(err);
+        });
+  </script>
+</head>
+<body class="main-horiz-gradient2">
+
+<div id="main-container">
+  <div class="banner main-horiz-gradient3">
+    <img src="public/images/logo.png"/>
+  </div>
+  <header>
+
+    <h1></h1>
+    <nav class="main-horiz-gradient3">
+      <ul>
+        <li> <a href="index.html" class="active">Accueil</a></li>
+        <li> <a href="#l" >Questionnaires</a></li>
+        <li><a href="#">Tutorat en ligne</a></li>
+        <li><a href="#">Environnement collaboratif</a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <div class="main-clear">
+    <info>loading...</info>
+  </div>
+  <!--
+      <footer class="footer">
+          <h6>Copyright@ Rodrigue & Yvesis</h6>
+      </footer>
+  -->
+
+</div>
+<footer class="footer">
+  <h6>Copyright@ Rodrigue & Yvesis</h6>
+</footer>
+
 </body>
 </html>

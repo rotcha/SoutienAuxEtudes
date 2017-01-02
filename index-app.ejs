@@ -6,7 +6,17 @@
     <link href="https://fonts.googleapis.com/css?family=Lemonada|Overlock+SC" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
     <link href="bootstrap.min.css" rel="stylesheet"/>
-
+    <script src="core-js/client/shim.min.js"></script>
+    <script src="zone.js/dist/zone.js"></script>
+    <script src="reflect-metadata/Reflect.js"></script>
+    <script src="systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app')
+            .catch(function (err) {
+                console.error(err);
+            });
+    </script>
 </head>
 <body class="main-horiz-gradient2">
 
@@ -23,40 +33,13 @@
                 <li> <a href="#l" >Questionnaires</a></li>
                 <li><a href="#">Tutorat en ligne</a></li>
                 <li><a href="#">Environnement collaboratif</a></li>
-                </hr>
+
             </ul>
         </nav>
     </header>
     <div class="main-clear">
-        <div class="container-fluid">
-            <article>
-                <div class="row">
-                    <div class="col-sm-4">
-                            <h3>Questionnaires</h3>
-                            <h4>Preparations aux examens a l'aide des questionnaires d'examens</h4>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <h3>Tutorat</h3>
-                        <h4>Obtenez de l'aide pour vos cours &agrave; distance</h4>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <h3>Environnement collaboratif</h3>
-                        <h4>Travailler en &eacute;quipe avec des moyens puissants</h4>
-                    </div>
-
-                </div>
-
-            </article>
-        </div>
+        <poly-info>loading...</poly-info>
     </div>
-<!--
-    <footer class="footer">
-        <h6>Copyright@ Rodrigue & Yvesis</h6>
-    </footer>
--->
-
 </div>
 <footer class="footer">
     <h6>Copyright@ Rodrigue & Yvesis</h6>
