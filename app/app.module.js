@@ -8,9 +8,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+/**
+ * Created by louly on 2017-01-02.
+ */
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var dive_log_component_1 = require("./dive-log.component");
+var app_main_component_1 = require("./app-main.component");
+var polyhackInfo_component_1 = require("./polyhackInfo.component");
+var about_component_1 = require("./about.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -19,8 +24,11 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule],
-        declarations: [dive_log_component_1.DiveLogComponent],
-        bootstrap: [dive_log_component_1.DiveLogComponent]
+        declarations: [app_main_component_1.PolyHackApp,
+            polyhackInfo_component_1.PolyHackInfo,
+            about_component_1.AboutComponent
+        ],
+        bootstrap: [app_main_component_1.PolyHackApp]
     }),
     __metadata("design:paramtypes", [])
 ], AppModule);
