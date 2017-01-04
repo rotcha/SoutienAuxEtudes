@@ -9,24 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /**
- * Created by louly on 2017-01-02.
+ * Created by Jenny on 2017-01-03.
  */
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var polyhackInfo_component_1 = require("./polyhackInfo.component");
-var about_module_1 = require("./about/about.module");
-var AppModule = (function () {
-    function AppModule() {
+var AboutComponent = (function () {
+    function AboutComponent() {
     }
-    return AppModule;
+    return AboutComponent;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [polyhackInfo_component_1.PolyHackInfo, about_module_1.AboutModule],
-        bootstrap: [polyhackInfo_component_1.PolyHackInfo]
+AboutComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'sd-about',
+        templateUrl: '/about.component.html',
+        styleUrls: ['about.component.css']
     }),
     __metadata("design:paramtypes", [])
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+], AboutComponent);
+exports.AboutComponent = AboutComponent;
+;
+//# sourceMappingURL=about.component.js.map
