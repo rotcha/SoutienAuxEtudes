@@ -62,13 +62,12 @@
         <li> <a href="#l" >Questionnaires</a></li>
         <li><a href="#">Tutorat en ligne</a></li>
         <li><a href="#">Environnement collaboratif</a></li>
-
+        <li><a [routerLink]="['/about']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">À propos de ce site</a> </li>
       </ul>
     </nav>
   </header>
-  <div class="main-clear">
-    <info>loading...</info>
-  </div>
+  <polyhack></polyhack>
+
   <!--
       <footer class="footer">
           <h6>Copyright@ Rodrigue & Yvesis</h6>
