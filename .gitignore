@@ -1,1 +1,9 @@
 node_modules/
+app1/
+app2/
+app3/
+app3_Modifié/
+*.map
+index3.html
+index2.html
+index0.html

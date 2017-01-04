@@ -9,28 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /**
- * Created by louly on 2017-01-02.
+ * Created by Jenny on 2017-01-03.
  */
 var core_1 = require("@angular/core");
+var common_1 = require("@angular/common");
 var platform_browser_1 = require("@angular/platform-browser");
-var app_main_component_1 = require("./app-main.component");
-var polyhackInfo_component_1 = require("./polyhackInfo.component");
 var about_component_1 = require("./about.component");
-var AppModule = (function () {
-    function AppModule() {
+var AboutModule = (function () {
+    function AboutModule() {
     }
-    return AppModule;
+    return AboutModule;
 }());
-AppModule = __decorate([
+AboutModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [app_main_component_1.PolyHackApp,
-            polyhackInfo_component_1.PolyHackInfo,
-            about_component_1.AboutComponent
-        ],
-        bootstrap: [app_main_component_1.PolyHackApp]
+        imports: [platform_browser_1.BrowserModule, common_1.CommonModule],
+        declarations: [about_component_1.AboutComponent],
+        exports: [about_component_1.AboutComponent]
     }),
     __metadata("design:paramtypes", [])
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+], AboutModule);
+exports.AboutModule = AboutModule;
+;
+//# sourceMappingURL=about.module.js.map

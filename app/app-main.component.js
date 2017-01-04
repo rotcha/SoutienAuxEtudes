@@ -9,28 +9,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /**
- * Created by louly on 2017-01-02.
+ * Created by louly on 2017-01-03.
  */
 var core_1 = require("@angular/core");
-var platform_browser_1 = require("@angular/platform-browser");
-var app_main_component_1 = require("./app-main.component");
-var polyhackInfo_component_1 = require("./polyhackInfo.component");
-var about_component_1 = require("./about.component");
-var AppModule = (function () {
-    function AppModule() {
+var PolyHackApp = (function () {
+    function PolyHackApp() {
     }
-    return AppModule;
+    return PolyHackApp;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
-        declarations: [app_main_component_1.PolyHackApp,
-            polyhackInfo_component_1.PolyHackInfo,
-            about_component_1.AboutComponent
-        ],
-        bootstrap: [app_main_component_1.PolyHackApp]
+PolyHackApp = __decorate([
+    core_1.Component({
+        selector: 'polyhack',
+        templateUrl: 'app3_Modifié/app-main-template.html'
     }),
     __metadata("design:paramtypes", [])
-], AppModule);
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+], PolyHackApp);
+exports.PolyHackApp = PolyHackApp;
+//# sourceMappingURL=app-main.component.js.map

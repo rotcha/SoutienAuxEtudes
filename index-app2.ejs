@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soutien à la formation en génie</title>
+    <link href="https://fonts.googleapis.com/css?family=Lemonada|Overlock+SC" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="bootstrap.min.css" rel="stylesheet"/>
+    <script src="core-js/client/shim.min.js"></script>
+    <script src="zone.js/dist/zone.js"></script>
+    <script src="reflect-metadata/Reflect.js"></script>
+    <script src="systemjs/dist/system.src.js"></script>
+    <script src="systemjs.config.js"></script>
+    <script>
+        System.import('app')
+            .catch(function (err) {
+                console.error(err);
+            });
+    </script>
+</head>
+<body class="main-horiz-gradient2">
+
+<div id="main-container">
+    <div class="banner main-horiz-gradient3">
+        <img src="images/logo.png"/>
+    </div>
+    <header>
+
+        <h1></h1>
+        <nav class="main-horiz-gradient3">
+            <ul>
+                <li> <a href="index.html" class="active">Accueil</a></li>
+                <li> <a href="#l" >Questionnaires</a></li>
+                <li><a href="#">Tutorat en ligne</a></li>
+                <li><a href="#">Environnement collaboratif</a></li>
+                <li><a [routerLink]="['/about']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">À propos de ce site</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-clear">
+        <poly-info>loading...</poly-info>
+    </div>
+    <div class="about">
+        <sd-about>Informations</sd-about>
+    </div>
+</div>
+<footer class="footer">
+    <h6>Copyright@ Rodrigue & Yvesis</h6>
+</footer>
+
+</body>
+</html>

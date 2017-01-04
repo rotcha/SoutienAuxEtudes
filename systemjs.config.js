@@ -11,7 +11,7 @@
     // --- Map Angular modules to their files
     map: {
       // --- All sample apps are within the 'apps' folder
-      app: 'app3',
+      app: 'app3_Modifié',
       // --- Angular bundels we use in the book
       '@angular/core': 
         'npm:@angular/core/bundles/core.umd.js',
