@@ -15,22 +15,26 @@ var PolyHackInfo = (function () {
             {
                 name: 'Questionnaires',
                 description: 'Questionnaires',
-                details: 'Trouvez les questionnaires aux derniers examens et quiz'
+                details: 'Trouvez les questionnaires aux derniers examens et quiz',
+                image: 'public/images/test.jpg'
             },
             {
                 name: 'Lab-crack',
                 description: 'Laboratoires',
-                details: 'Trouvez les solutions aux derniers laboratoires'
+                details: 'Trouvez les solutions aux derniers laboratoires',
+                image: 'public/images/lab.png'
             },
             {
                 name: 'Tutorat en ligne',
                 description: 'Tutorat',
-                details: 'Trouvez les solutions aux derniers laboratoires'
+                details: 'Obtenez de laide grace pour vos cours',
+                image: 'public/images/math.jpg'
             },
             {
                 name: 'Environnement collaboratif',
                 description: 'Travail en equipe',
-                details: 'Trouvez les solutions aux derniers laboratoires'
+                details: 'Travailler en equipe avec des outils puissants',
+                image: 'public/images/team.jpg'
             },
         ];
     }
@@ -39,7 +43,7 @@ var PolyHackInfo = (function () {
 PolyHackInfo = __decorate([
     core_1.Component({
         selector: 'info',
-        templateUrl: 'app3_Modifié/polyhack-template.html'
+        templateUrl: 'app/app-home/info-template.html' //'app/app-home/polyhack-template.html'
     }),
     __metadata("design:paramtypes", [])
 ], PolyHackInfo);

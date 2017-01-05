@@ -132,3 +132,8 @@ li a:hover {
     /*float: left;*/
     display:inline;
 }
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}

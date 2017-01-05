@@ -5,8 +5,8 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {PolyHackApp} from './app-main.component';
-import {PolyHackInfo} from './polyhackInfo.component';
-import {AboutComponent} from './about.component';
+import {PolyHackInfo} from './app-home/polyhackInfo.component';
+import {AboutComponent} from './app-about/about.component';
 
 @NgModule({
     imports: [BrowserModule],
