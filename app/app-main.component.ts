@@ -2,11 +2,11 @@
  * Created by louly on 2017-01-03.
  */
 import {Component} from '@angular/core';
-import {PolyHackInfo} from './polyhackInfo.component';
-import {AboutComponent} from './about.component';
+import {PolyHackInfo} from './app-home/polyhackInfo.component';
+import {AboutComponent} from './app-about/about.component';
 
 @Component({
     selector:'polyhack',
-    templateUrl:'app3_Modifié/app-main-template.html'
+    templateUrl:'app/app-main-template.html'
 })
 export class PolyHackApp{}

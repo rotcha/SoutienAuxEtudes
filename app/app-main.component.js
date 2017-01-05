@@ -20,7 +20,7 @@ var PolyHackApp = (function () {
 PolyHackApp = __decorate([
     core_1.Component({
         selector: 'polyhack',
-        templateUrl: 'app3_Modifié/app-main-template.html'
+        templateUrl: 'app/app-main-template.html'
     }),
     __metadata("design:paramtypes", [])
 ], PolyHackApp);
