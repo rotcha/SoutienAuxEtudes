@@ -1,6 +1,33 @@
-  <div class="main-clear">
-	<info></info>
-  </div>
-<div class="about">
-	<sd-about></sd-about>
+<header>
+	<nav class="navbar navbar-default navbar-fixed-top main-horiz-gradient3">
+		<div class="collapse navbar-collapse" id="myNavBar">
+			<div class="menu-container">
+				<ul class="nav navbar-nav">
+					<li> <a href="#index" (click)="changeView('info')">Accueil</a></li>
+					<li> <a href="#"  >Questionnaires</a></li>
+					<li><a href="#tutorat" (click)="changeView('tutorat')" data-toggle="collapse" data-target="#tuto-app" >Tutorat en ligne</a></li>
+					<li><a href="#" (click)="changeView('team-work')" >Environnement collaboratif</a></li>
+					<!-- La ligne ci-dessus ne marche pas, je l'ai remplace avec la balise normale et un evenement (click) pour gerer
+                    le changement de vue-->
+
+					<!--	<li><a href="#" (click)="changeView('about')" [routerLink]="['/about']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">À propos de ce site</a> </li>-->
+					<li><a href="#" (click)="changeView('about')" >&Agrave;propos de ce site</a> </li>
+				</ul>
+			</div>
+
+		</div>
+
+	</nav>
+</header>
+<div [ngSwitch]="currentView" class="clear-top">
+	<div class="main-clear" *ngSwitchCase ="'info'">
+		<info></info>
+	</div>
+	<div class="about" *ngSwitchCase ="'about'">
+		<sd-about></sd-about>
+	</div>
+	<tutorat *ngSwitchCase ="'tutorat'"></tutorat>
+	<!--<tutorat *ngSwitchCase ="'team-work'"></tutorat>
+	<tutorat *ngSwitchCase ="'labs'"></tutorat>-->
 </div>
+

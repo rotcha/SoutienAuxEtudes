@@ -9,26 +9,29 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 /**
- * Created by louly on 2017-01-03.
+ * Created by louly on 2017-01-06.
  */
 var core_1 = require("@angular/core");
-/*import  {LabsComponent} from './app-labs/labs.component';*/
-/*import  {TeamWorkComponent} from './app-team/labs.component';*/
-var PolyHackApp = (function () {
-    function PolyHackApp() {
-        this.currentView = 'info';
+var Tutorat = (function () {
+    function Tutorat() {
+        this.user = 'Demo';
+        /* RequestMode :['Student','Teacher'];*/
+        this.requestType = 'Student';
     }
-    PolyHackApp.prototype.changeView = function (view) {
-        this.currentView = view;
+    Tutorat.prototype.postContent = function () {
     };
-    return PolyHackApp;
+    Tutorat.prototype.getLiveUsers = function () {
+    };
+    Tutorat.prototype.sendRequest = function () {
+    };
+    return Tutorat;
 }());
-PolyHackApp = __decorate([
+Tutorat = __decorate([
     core_1.Component({
-        selector: 'polyhack',
-        templateUrl: 'app/app-main-template.html'
+        selector: 'tutorat',
+        templateUrl: 'app/app-tutorat/tutorat-template.html'
     }),
     __metadata("design:paramtypes", [])
-], PolyHackApp);
-exports.PolyHackApp = PolyHackApp;
-//# sourceMappingURL=app-main.component.js.map
+], Tutorat);
+exports.Tutorat = Tutorat;
+//# sourceMappingURL=tutorat.component.js.map

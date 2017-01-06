@@ -55,22 +55,24 @@
 <body class="main-horiz-gradient2">
 
 <div id="main-container">
-  <div class="banner main-horiz-gradient3">
+ <!-- <div class="banner main-horiz-gradient3">
     <img src="public/images/logo.png"/>
-  </div>
-  <header>
+  </div>-->
+ <!-- <header>
 
-    <h1></h1>
+
     <nav class="main-horiz-gradient3">
       <ul>
         <li> <a href="index.html" class="active">Accueil</a></li>
         <li> <a href="#l" >Questionnaires</a></li>
         <li><a href="#">Tutorat en ligne</a></li>
         <li><a href="#">Environnement collaboratif</a></li>
-        <li><a [routerLink]="['/about']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">À propos de ce site</a> </li>
+        <li><a href="#" (click)="changeView('about')" [routerLink]="['/about']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">À propos de ce site</a> </li>
       </ul>
     </nav>
-  </header>
+
+  </header>-->
+
 <!--
 
   <div class="main-clear">
@@ -82,6 +84,7 @@
   </div>
 -->
 
+
   <polyhack></polyhack>
 
 
@@ -92,8 +95,11 @@
   -->
 
 </div>
-<footer class="footer">
-  <h6>Copyright@ Rodrigue & Yvesis</h6>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Rotcha & Yveis</p>
 </footer>
 
 </body>
