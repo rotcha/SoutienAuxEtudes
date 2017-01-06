@@ -14,13 +14,18 @@
         <div class="carousel-inner" role="listbox">
            <div *ngFor="let info of infos let f= first" [ngClass]="f?'item active':'item' ">
                <div class="container-fluid">
-                   <div class="col-sm-4">
+                   <div class="row">
+                       <div class="col-sm-4">
                        <h3>{{info.name}}</h3>
                        <h4>{{info.details}}</h4>
-                   </div>
-                   <div class="center-block">
-                      <!-- <h4 class="media-heading">{{info.description}}</h4>-->
-                       <img src="{{info.image}}" class ="img-rounded" alt="{{info.description}}" >
+                       <p><button class="btn btn-primary">Plus d’informations
+                       </button></p>
+                       </div>
+
+                       <div class="center-block">
+                          <!-- <h4 class="media-heading">{{info.description}}</h4>-->
+                           <img src="{{info.image}}" class ="img-rounded" alt="{{info.description}}" >
+                       </div>
                    </div>
                </div>
             </div>
