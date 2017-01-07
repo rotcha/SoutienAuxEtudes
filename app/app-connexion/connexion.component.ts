@@ -6,6 +6,6 @@ import {Component} from
 @Component({
     moduleId: module.id,
     selector:'connect',
-    templateUrl:'./app/app-connexion/connexion-template.html'
+    templateUrl:'./connexion-template.html'
 })
 export class ConnexionComponent{};

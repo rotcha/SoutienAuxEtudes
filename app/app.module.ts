@@ -16,7 +16,7 @@ import {ConnexionComponent} from "./app-connexion/connexion.component";
                     PolyHackInfo,
 				    AboutComponent,
 				   Tutorat,
-                   ConnexionComponent
+                    ConnexionComponent
 				   ],
     bootstrap: [PolyHackApp]
 })
