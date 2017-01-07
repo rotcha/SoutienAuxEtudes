@@ -14,6 +14,14 @@
 					<li><a href="#" (click)="changeView('about')" >&Agrave;propos de ce site</a> </li>
 				</ul>
 			</div>
+			<div class="btn-group">
+				<button type="button" href="#" (click)="changeView('connect')" class="btn btn-primary navbar-btn btn-sm" ><span class="glyphicon glyphicon-user"></span><!--Connexion/Inscription--></button>
+				<!--<button class="btn btn-primary navbar-btn btn-sm dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Connexion</a></li>
+					<li><a href="#">Inscription</a></li>
+				</ul>-->
+			</div>
 
 		</div>
 
@@ -29,5 +37,7 @@
 	<tutorat *ngSwitchCase ="'tutorat'"></tutorat>
 	<!--<tutorat *ngSwitchCase ="'team-work'"></tutorat>
 	<tutorat *ngSwitchCase ="'labs'"></tutorat>-->
+    <connect *ngSwitchCase="'connect'"></connect>
+
 </div>
 

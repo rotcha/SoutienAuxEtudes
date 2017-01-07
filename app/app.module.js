@@ -17,6 +17,7 @@ var app_main_component_1 = require("./app-main.component");
 var polyhackInfo_component_1 = require("./app-home/polyhackInfo.component");
 var about_component_1 = require("./app-about/about.component");
 var tutorat_component_1 = require("./app-tutorat/tutorat.component");
+var connexion_component_1 = require("./app-connexion/connexion.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -28,7 +29,8 @@ AppModule = __decorate([
         declarations: [app_main_component_1.PolyHackApp,
             polyhackInfo_component_1.PolyHackInfo,
             about_component_1.AboutComponent,
-            tutorat_component_1.Tutorat
+            tutorat_component_1.Tutorat,
+            connexion_component_1.ConnexionComponent
         ],
         bootstrap: [app_main_component_1.PolyHackApp]
     }),
